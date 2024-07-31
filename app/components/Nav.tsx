@@ -26,10 +26,12 @@ const Nav = () => {
           onMouseLeave={handleMouseLeave}
           className="relative"
         >
-          <Link href={""}>Store</Link>
+          <Link href={""} className="text-[#D1D1D1] hover:text-[#ffffff]">
+            Store
+          </Link>
           {
             <div
-              className={`fixed top-11 left-1/2 transform -translate-x-1/2 w-screen max-w-screen h-[340px] bg-black/80 flex justify-center items-center transition-opacity duration-300 ease-in-out ${
+              className={`fixed top-11 left-1/2 transform -translate-x-1/2 w-screen max-w-screen h-[340px] bg-black/70 backdrop-blur-md flex justify-center items-center transition-opacity duration-300 ease-in-out ${
                 popover === "store"
                   ? "opacity-100 scale-100"
                   : "opacity-0 scale-100"
@@ -83,10 +85,12 @@ const Nav = () => {
           onMouseLeave={handleMouseLeave}
           className="relative"
         >
-          <Link href={""}>Mac</Link>{" "}
+          <Link className="text-[#D1D1D1] hover:text-[#ffffff]" href={""}>
+            Mac
+          </Link>{" "}
           {
             <div
-              className={`fixed top-11 left-1/2 transform -translate-x-1/2 w-screen max-w-screen h-fit pb-10 bg-black/80 flex justify-center items-center transition-opacity duration-300 ease-in-out ${
+              className={`fixed top-11 left-1/2 transform -translate-x-1/2 w-screen max-w-screen h-fit pb-10 bg-black/70 backdrop-blur-md flex justify-center items-center transition-opacity duration-300 ease-in-out ${
                 popover === "Mac"
                   ? "opacity-100 scale-100"
                   : "opacity-0 scale-100"
@@ -148,10 +152,12 @@ const Nav = () => {
           onMouseLeave={handleMouseLeave}
           className="relative"
         >
-          <Link href={""}>iPad</Link>{" "}
+          <Link className="text-[#D1D1D1] hover:text-[#ffffff]" href={""}>
+            iPad
+          </Link>{" "}
           {
             <div
-              className={`fixed top-11 left-1/2 transform -translate-x-1/2 w-screen max-w-screen h-fit pb-10 bg-black/80 flex justify-center items-center transition-opacity duration-300 ease-in-out ${
+              className={`fixed top-11 left-1/2 transform -translate-x-1/2 w-screen max-w-screen h-fit pb-10 bg-black/70 backdrop-blur-md flex justify-center items-center transition-opacity duration-300 ease-in-out ${
                 popover === "iPad"
                   ? "opacity-100 scale-100"
                   : "opacity-0 scale-100"
@@ -204,8 +210,69 @@ const Nav = () => {
             </div>
           }
         </li>
-        <li>
-          <Link href={""}>iPhone</Link>
+        <li
+          onMouseEnter={() => handleMouseEnter("iPhone")}
+          onMouseLeave={handleMouseLeave}
+          className="relative"
+        >
+          <Link className="text-[#D1D1D1] hover:text-[#ffffff]" href={""}>
+            iPhone
+          </Link>{" "}
+          {
+            <div
+              className={`fixed top-11 left-1/2 transform -translate-x-1/2 w-screen max-w-screen h-fit pb-10 bg-black/70 backdrop-blur-md flex justify-center items-center transition-opacity duration-300 ease-in-out ${
+                popover === "iPhone"
+                  ? "opacity-100 scale-100"
+                  : "opacity-0 scale-100"
+              }`}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className="w-[60%] h-full mt-10">
+                <div className="grid grid-cols-4 gap-4">
+                  <div className="text-white">
+                    <p className="text-[15px] opacity-30">Explore Mac</p>
+                    <ul className="flex flex-col gap-2 text-[17px] mb-5">
+                      <li>Explore All iPhone</li>
+                      <li>iPhone 15 Pro</li>
+                      <li>iPhone 15</li>
+                      <li>iPhone 14</li>
+                      <li>iPhone 13</li>
+                      <li>iPhone SE</li>
+                    </ul>
+                    <ul className="text-[10px] flex flex-col gap-2">
+                      <li>Compare iPhone</li>
+                      <li>Switch from Android</li>
+                    </ul>
+                  </div>
+                  <div className="text-white">
+                    <p className="text-[15px] opacity-30">Shop Mac</p>
+                    <ul className="flex flex-col gap-2">
+                      <li>Shop iPhone</li>
+                      <li>iPhone Accessories</li>
+                      <li>Apple Trade In</li>
+                      <li>Carrier Deals at Apple</li>
+                      <li>Financing</li>
+                    </ul>
+                  </div>
+                  <div className="text-white">
+                    <p className="text-[15px] opacity-30">More from Mac</p>
+                    <ul className="flex flex-col gap-2">
+                      <li>iPhone Support</li>
+                      <li>AppleCare+ for iPone</li>
+                      <li>iOS 18 Preview</li>
+                      <li>Apple Intelligence</li>
+                      <li>Apps by Apple</li>
+                      <li>iPhone Privacy</li>
+                      <li>iCloud+</li>
+                      <li>Wallet,Pay, Card</li>
+                      <li>Siri</li>
+                    </ul>
+                  </div>
+                  <div className="text-white"></div>
+                </div>
+              </div>
+            </div>
+          }
         </li>
         <li>
           <Link href={""}>Watch</Link>
