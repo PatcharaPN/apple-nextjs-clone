@@ -14,7 +14,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="z-10 w-[100vw] flex justify-center items-center bg-black/70 backdrop-blur-md h-12 sticky top-0">
+    <nav className="z-50 w-[100vw] flex justify-center items-center bg-black/70 backdrop-blur-md h-12 sticky top-0">
       <ul className="flex gap-10 text-[14px] text-[#D1D1D1] ">
         <li>
           <Link href={""}>

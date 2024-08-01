@@ -2,11 +2,11 @@ import Image from "next/image";
 import Nav from "./components/Nav";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import BubbleSVG from "./components/BubbleSvg";
+import MiniBubbleSvg from "./components/MiniBubbleSvg";
 
 export default function Home() {
   return (
-    <main className="w-screen flex flex-col h-screen">
-      <Nav />
+    <main className="w-screen flex flex-col h-[90vh]">
       <div className="absolute top-0 left-0 w-full h-[90%]">
         <Image
           className="shadow-2xl"
@@ -34,11 +34,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className="h-screen w-screen">
-        <div>
-          <h1>sadasdads</h1>
-        </div>
-      </section>
     </main>
   );
 }
