@@ -14,8 +14,31 @@ const Nav = () => {
   };
 
   return (
-    <nav className="z-50 w-[100vw] flex justify-center items-center bg-black/70 backdrop-blur-md h-12 sticky top-0">
-      <ul className="flex gap-10 text-[14px] text-[#D1D1D1] ">
+    <nav className="z-50 sticky bg-black/70 top-0 backdrop-blur-md h-12 w-full md:z-50 md:w-[100vw] md:flex md:justify-center md:items-center md:bg-black/70 md:backdrop-blur-md md:h-12 md:sticky md:top-0">
+      <ul className="flex justify-between items-center h-20 px-6">
+        <li>
+          <Link href={""}>
+            <Icon width={20} icon="ic:baseline-apple" color="#ffffff" />
+          </Link>
+        </li>
+        <div className="flex gap-5">
+          <li>
+            <Link href={""}>
+              <Icon width={20} icon="ic:sharp-search" color="#ffffff" />
+            </Link>
+          </li>
+          <li>
+            <Link href={""}>
+              <Icon width={20} icon="solar:cart-outline" color="#ffffff" />
+            </Link>
+          </li>
+          <li>
+            <Icon width={20} icon="ci:menu-alt-01" color="#ffffff" />
+          </li>
+        </div>
+      </ul>
+
+      <ul className="hidden md:flex md:gap-10 md:text-[14px] md:text-[#D1D1D1] ">
         <li>
           <Link href={""}>
             <Icon width={20} icon="ic:baseline-apple" />
